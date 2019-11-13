@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding';
+  someValue = "givevalue";
+  submit(event) {
+    // debugger;
+    console.log(event.value);
+    this.someValue = event.value;
+  }
 }
